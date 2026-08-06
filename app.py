@@ -91,8 +91,4 @@ if uploaded_file is not None:
             st.error(f"Prediction failed: {e}")
 else:
     st.info("Upload a CSV with the engine's sensor readings to get a prediction.")
-    import pandas as pd
-    df = pd.read_csv("sample_engine_data.csv")
-    df["op_setting_3"] = 100.0
-    df.to_csv("sample_engine_data.csv", index=False)
-    
+   
